@@ -8,7 +8,7 @@ function auth(callback) {
                 renderer: "canvas",
                 loop: true,
                 autoplay: true,
-                path: "https://raw.githubusercontent.com/pubgcrafton/shaxsiy/master/assets/noface.json",
+                path: "https://raw.githubusercontent.com/pubgcrafton/Shaxsiy007/master/assets/noface.json",
                 rendererSettings: {
                     clearCanvas: true,
                 }
