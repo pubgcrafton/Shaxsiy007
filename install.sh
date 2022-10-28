@@ -149,7 +149,7 @@ printf "\n\r\033[0;34mCloning repo...\e[0m"
 ##############################################################################
 
 # shellcheck disable=SC2086
-${SUDO_CMD}rm -rf shaxsiy
+${SUDO_CMD}rm -rf Shaxsiy
 # shellcheck disable=SC2086
 runout ${SUDO_CMD}git clone https://github.com/pubgcrafton/Shaxsiy007/ || {
 	errorout "Userbot tayyorlanmoqda."
