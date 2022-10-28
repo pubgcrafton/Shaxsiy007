@@ -1,1 +1,1 @@
-web: python3 -m hikka
+web: python3 -m shaxsiy
