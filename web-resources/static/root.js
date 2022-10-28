@@ -8,7 +8,7 @@ function auth(callback) {
                 renderer: "canvas",
                 loop: true,
                 autoplay: true,
-                path: "https://raw.githubusercontent.com/pubgcrafton/Shaxsiy007/master/assets/noface.json",
+                path: "https://raw.githubusercontent.com/pubgcrafton/Shaxsiy/master/assets/noface.json",
                 rendererSettings: {
                     clearCanvas: true,
                 }
@@ -27,7 +27,7 @@ function auth(callback) {
                     return
                 }
 
-                if (response.startsWith("hikka_")) {
+                if (response.startsWith("shaxsiy_")) {
                     $.cookie("session", response)
                     auth_required = false;
                     $(".authorized").hide().fadeIn(100);
@@ -103,7 +103,7 @@ function finish_login() {
         })
         .catch((err) => {
             error_state();
-            error_message("Kirish tasdiqlash xatosi: " + err.toString());
+            error_message("Kirishda tasdiqlash xatosi: " + err.toString());
         });
 }
 
@@ -134,7 +134,7 @@ function tg_code() {
                         })
                     });
                     $(".code-input").removeAttr("disabled");
-                    $(".code-caption").html("Telegram 2FA parolingizni kiriting, so'ng <span style='color: #dc137b;'>Tasdiqlash</span>ni bosing");
+                    $(".code-caption").html("Telegram 2 bosqichli parolingizni kiriting, so'ng <span style='color: #dc137b;'>Tasdiqlash</span>ni bosing");
                     cnt_btn.setAttribute("current-step", "2fa");
                     $("#monkey").hide();
                     $("#monkey-close").hide().fadeIn(100);
