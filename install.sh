@@ -113,7 +113,7 @@ elif echo "$OSTYPE" | grep -qE '^darwin.*'; then
 	PKGMGR="brew install"
 	PYVER="3"
 else
-	printf "\r\033[1;31mUnrecognised OS.\e[0m Please follow 'Manual installation' at \033[0;94mhttps://github.com/pubgcrafton/shaxsiy/#-installation\e[0m"
+	printf "\r\033[1;31mUnrecognised OS.\e[0m Please follow 'Manual installation' at \033[0;94mhttps://github.com/pubgcrafton/Shaxsiy007/#-installation\e[0m"
 	exit 1
 fi
 
@@ -151,11 +151,11 @@ printf "\n\r\033[0;34mCloning repo...\e[0m"
 # shellcheck disable=SC2086
 ${SUDO_CMD}rm -rf shaxsiy
 # shellcheck disable=SC2086
-runout ${SUDO_CMD}git clone https://github.com/pubgcrafton/shaxsiy/ || {
+runout ${SUDO_CMD}git clone https://github.com/pubgcrafton/Shaxsiy007/ || {
 	errorout "Userbot tayyorlanmoqda."
 	exit 3
 }
-cd shaxsiy || {
+cd Shaxsiy || {
 	printf "\r\033[0;33mRun: \033[1;33mpkg install git\033[0;33m and restart installer"
 	exit 7
 }
